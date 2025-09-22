@@ -9,3 +9,9 @@
 - Dr. Sehra has a fine tuned `xTP-LLM` model.
 - Main problem with `xTP-LLM` is that it is very computationally expensive (around 25 GBs of GPU memory) 
  - Try to implement 1 or 2 papers (clone repo, run model locally). Find gaps, and bring novelty. 
+
+## Friday, Sep 19
+- [ ] Clone Flower ai LLM example from github
+- [ ] Run FL LLM simulation on flower
+### Other Notes and Information:
+- Google summer of code
