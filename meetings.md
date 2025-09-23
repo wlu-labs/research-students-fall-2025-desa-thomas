@@ -11,7 +11,11 @@
  - Try to implement 1 or 2 papers (clone repo, run model locally). Find gaps, and bring novelty. 
 
 ## Friday, Sep 19
-- [ ] Clone Flower ai LLM example from github
-- [ ] Run FL LLM simulation on flower
+- ~[ ] Clone Flower ai LLM example from github~ 
+- ~[ ] Run FL LLM simulation on flower~
+    -Need GPU to run flowertune-llm example
 ### Other Notes and Information:
 - Google summer of code
+
+## Tuesday, Sep 23 
+- [ ] Access Digital Aliance computing resources
