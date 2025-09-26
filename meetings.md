@@ -18,4 +18,9 @@
 - Google summer of code
 
 ## Tuesday, Sep 23 
-- [ ] Access Digital Aliance computing resources
+- [x] Register for compute canadas resources 
+
+## Friday Sep 26
+- [ ] Access compute canadas resources from my machine and play around with it
+- [ ] Run flowertune-llm example and simulate FL setting (3 clients)
+- [ ] Run xTP-llm fine tuning script on compute resources
