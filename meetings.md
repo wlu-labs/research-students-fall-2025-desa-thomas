@@ -21,7 +21,7 @@
 
 ## Friday Sep 26
 - [x] Access compute canadas resources from my machine (setup ssh key and request access)
-- [ ] Run flowertune-llm example and simulate FL setting (3 clients) on HPC resources
+- [X] Run flowertune-llm example and simulate FL setting (3 clients) on HPC resources
 - [ ] Run xTP-llm fine tuning script on compute resources
 
 ## Tuesday Sep 30
