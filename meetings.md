@@ -1,10 +1,9 @@
 # Meeting Minutes
-## FL Meeting:  Thurs, Sep 11, 4:30 pm
-
-### Action Items 
+## Thurs, Sep 11
 - [x] Look into Compute Canada, and how I can access these resources
 - [x] Set up FL development environment on my machine (Flower AI/ Flare)
 - [x] Clone `xTP-LLM` repository
+
 ### Other Notes & Information
 - Dr. Sehra has a fine tuned `xTP-LLM` model.
 - Main problem with `xTP-LLM` is that it is very computationally expensive (around 25 GBs of GPU memory) 
@@ -21,6 +20,9 @@
 - [x] Register for compute canadas resources 
 
 ## Friday Sep 26
-- [ ] Access compute canadas resources from my machine and play around with it
-- [ ] Run flowertune-llm example and simulate FL setting (3 clients)
+- [x] Access compute canadas resources from my machine (setup ssh key and request access)
+- [ ] Run flowertune-llm example and simulate FL setting (3 clients) on HPC resources
 - [ ] Run xTP-llm fine tuning script on compute resources
+
+## Tuesday Sep 30
+- [ ] Create flow chart/gant chart to track project progress
