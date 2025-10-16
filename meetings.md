@@ -22,7 +22,12 @@
 ## Friday Sep 26
 - [x] Access compute canadas resources from my machine (setup ssh key and request access)
 - [X] Run flowertune-llm example and simulate FL setting (3 clients) on HPC resources
-- [ ] Run xTP-llm fine tuning script on compute resources
 
-## Tuesday Sep 30
-- [ ] Create flow chart/gant chart to track project progress
+## Friday Oct 3
+- [X] Clone and run xTP-LLM on HPC server
+    - 
+- [ ] Connect xTP-LLM to flower (run with 3 clients)
+- [X] Connect Wand B account to xTP-LLM instance
+
+### notes
+- setup wandb
