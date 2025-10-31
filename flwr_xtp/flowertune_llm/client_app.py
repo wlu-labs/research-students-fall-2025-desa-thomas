@@ -11,12 +11,12 @@ from peft.utils.save_and_load import get_peft_model_state_dict, set_peft_model_s
 from transformers import TrainingArguments
 from trl import SFTTrainer
 
-from flowertune_llm.dataset import (
+from flwr_xtp.dataset import (
     get_tokenizer_and_data_collator_and_propt_formatting,
     load_data,
     replace_keys,
 )
-from flowertune_llm.models import cosine_annealing, get_model
+from flwr_xtp.models import cosine_annealing, get_model
 
 # Avoid warnings
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
