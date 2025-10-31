@@ -1,2 +1,3 @@
 # flwr-xtp
-Fork of [flowertune-llm]
+Used [flowertune-llm] as boilerplate
+

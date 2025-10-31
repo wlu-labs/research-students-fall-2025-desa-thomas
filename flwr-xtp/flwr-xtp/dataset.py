@@ -78,7 +78,7 @@ def xtp_load_data(partition_id: int, num_partitions: int, file_path: str):
     if FDS is None:
 
         # finetune_lora.py line 354 - 375
-        extension = (file.split(".")[-1])
+        extension = (file_path.split(".")[-1])
         if extension == "txt":
             extension = "text"
         
@@ -93,3 +93,7 @@ def xtp_load_data(partition_id: int, num_partitions: int, file_path: str):
     client_trainset = FDS.load_partition(partition_id, "train")
     return client_trainset
 
+
+trainset = xtp_load_data(1, 3, "../xTP-LLM/mini_datasets/traffic_datasets_all_12pred12_train_mini.json")
+
+print(trainset.features)

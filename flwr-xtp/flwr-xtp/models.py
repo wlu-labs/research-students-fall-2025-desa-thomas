@@ -58,3 +58,44 @@ def get_model(model_cfg: DictConfig):
     )
 
     return get_peft_model(model, peft_config)
+
+
+# --------------------------------
+# Modified functions - tds
+
+
+def get_xtp_model(model_cfg: DictConfig):
+    """Load model with appropriate quantization config and other optimizations.
+       modified to match xTP-LLMs model configuration settings.
+    """
+
+    if model_cfg.quantization == 4:
+        quantization_config = BitsAndBytesConfig(load_in_4bit=True)
+    elif model_cfg.quantization == 8:
+        quantization_config = BitsAndBytesConfig(load_in_8bit=True)
+    else:
+        raise ValueError(
+            f"Use 4-bit or 8-bit quantization. You passed: {model_cfg.quantization}/"
+        )
+
+    model = AutoModelForCausalLM.from_pretrained(
+        model_cfg.name,
+        quantization_config=quantization_config,
+        torch_dtype=torch.bfloat16,
+    )
+
+    model = prepare_model_for_kbit_training(
+        model, use_gradient_checkpointing=model_cfg.gradient_checkpointing
+    )
+
+    peft_config = LoraConfig(
+        r=model_cfg.lora.peft_lora_r,
+        lora_alpha=model_cfg.lora.peft_lora_alpha,
+        lora_dropout=0.05,     # this is all I added
+        inference_mode=False,  #
+        bias="none", 
+        task_type="CAUSAL_LM",
+    )
+
+    return get_peft_model(model, peft_config)
+

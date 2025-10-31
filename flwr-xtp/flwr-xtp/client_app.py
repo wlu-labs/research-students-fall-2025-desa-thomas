@@ -40,11 +40,11 @@ def train(msg: Message, context: Context):
 
     # Let's get the client partition
     trainset = load_data(partition_id, num_partitions, cfg.dataset.name)
-    (
-        tokenizer,
-        data_collator,
-        formatting_prompts_func,
-    ) = get_tokenizer_and_data_collator_and_propt_formatting(cfg.model.name)
+(
+    tokenizer,
+    data_collator,
+    formatting_prompts_func,
+) = get_tokenizer_and_data_collator_and_propt_formatting(cfg.model.name)
 
     # Load the model and initialize it with the received weights
     model = get_model(cfg.model)
