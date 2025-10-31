@@ -31,3 +31,11 @@
 
 ### notes
 - setup wandb
+
+
+## Friday Oct 31
+- [ ] Initalize wandb on flower client method ()
+- [ ] Run xTP-LLM on Flower (don't split dataset) on 3 clients
+- [ ] Run xTP-LLM on Flower with splitting dataset
+- [ ] Store training metrics 
+
