@@ -34,8 +34,16 @@
 
 
 ## Friday Oct 31
-- [ ] Initalize wandb on flower client method ()
-- [ ] Run xTP-LLM on Flower (don't split dataset) on 3 clients
+- [X] Initalize wandb on flower client method ()
+- [X] Run xTP-LLM on Flower (don't split dataset) on 3 clients
 - [ ] Run xTP-LLM on Flower with splitting dataset
 - [ ] Store training metrics 
 
+## Tuesday November 4
+- [ ] Run inference_chat.py (xTP validation script) on finetuned xtp-llm (outputs/mini_datasets/openlm-research/$modelname/checkpoint...)
+- [X] Updated weekly reports up to november 4th
+
+## Tuesday November 11
+- [ ] Run inference_chat.py on trained xtp-LLM 
+- [ ] Review seerat's flower code and fix aggregated model metrics
+- [ ] Look into fixing wandb logging for federated clients
