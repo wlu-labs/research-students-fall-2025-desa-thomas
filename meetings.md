@@ -47,3 +47,6 @@
 - [ ] Run inference_chat.py on trained xtp-LLM 
 - [ ] Review seerat's flower code and fix aggregated model metrics
 - [ ] Look into fixing wandb logging for federated clients
+
+## Friday November 14 
+- [ ] Fix problem with inference_chat memory usage
