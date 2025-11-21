@@ -18,3 +18,10 @@
 
 #### inference.py
     - Ran inference.py on the entire H100 GPU instead of 1/2 of it. There is now 80 gb of VRAM. Should run fine
+
+## Friday, Nov 21
+
+### Tasks/Problems to Address 
+    - Log evaluation metrics on wandb for global server and each individual client (federated xtp)
+    - Access Federatedly trained global LLM model (Make note of how many clients trained the model and how the data was split)
+    - Evaluated the global model (Inference.py) save error metrics for predictions

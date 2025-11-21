@@ -50,3 +50,6 @@
 
 ## Friday November 14 
 - [ ] Fix problem with inference_chat memory usage
+
+## Friday Nov 21
+- [ ] Get evaluation metrics for federated LLM 
