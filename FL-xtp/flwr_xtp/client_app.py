@@ -13,7 +13,7 @@ from trl import SFTTrainer
 
 from flwr_xtp.dataset import (
     get_tokenizer_and_data_collator_and_propt_formatting,
-    xtp_load_data,
+    load_data_from_file,
     replace_keys,
 )
 from flwr_xtp.models import cosine_annealing, get_model
@@ -60,7 +60,7 @@ def train(msg: Message, context: Context):
 
 
     # Let's get the client partition
-    trainset = xtp_load_data(partition_id, num_partitions, cfg.dataset.name)
+    trainset = load_data_from_file(partition_id, num_partitions, cfg.dataset.name)
     
     (
     tokenizer,

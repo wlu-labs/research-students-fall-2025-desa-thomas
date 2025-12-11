@@ -68,9 +68,7 @@ def replace_keys(input_dict, match="-", target="_"):
     return new_dict
 
 
-#----------------------
-
-def xtp_load_data(partition_id: int, num_partitions: int, file_path: str):
+def load_data_from_file(partition_id: int, num_partitions: int, file_path: str):
     """Modified version of load data function above.
        Loads the data from a local file instead
    """
@@ -94,7 +92,3 @@ def xtp_load_data(partition_id: int, num_partitions: int, file_path: str):
     client_trainset = FDS.load_partition(partition_id, "train")
     return client_trainset
 
-
-# trainset = xtp_load_data(1, 3, "../xTP-LLM/mini_datasets/traffic_datasets_all_12pred12_train_mini.json")
-#
-# print(trainset.features)
