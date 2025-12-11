@@ -218,4 +218,12 @@ Temporary Items/
 notes.md
 login.md
 compute-resources-notes.md
+paper_notes.md 
 
+notebooks/
+reports/
+src/
+
+**/flwr-xtp-inference-results/
+
+base_xtp_output/

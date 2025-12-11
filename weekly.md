@@ -25,3 +25,21 @@
     - Log evaluation metrics on wandb for global server and each individual client (federated xtp)
     - Access Federatedly trained global LLM model (Make note of how many clients trained the model and how the data was split)
     - Evaluated the global model (Inference.py) save error metrics for predictions
+    - Inference.py keeps running into OOM error and crashing (even after allocating a lot more memory)
+
+### Solutions
+    - Inference.py OOM error: in `inference.sh` the shell script which calls inference.py and passes all relevant parameters passed the ouput directory of the training script as the directory of the new model. That directory contained all checkpoints from model fine-tuning, and so it (tried) loading all of those checkpoints into memory and hence ran out of it. Hopefully fixed the problem by specifying the specific checkpoint to use. Currently waiting for the job to execute.
+
+## Monday Nov 24
+
+### email
+- [X] compute canada (OOM inference, run multiple clients on separate nodes) 
+- [X] xTP-LLM Authors
+- [X] Seerat
+- [ ] ~flower.ai (contributer to flowertune-llm, CUDA out of memory)~
+
+## Tuesday Nov 25
+- [X] Meet with Seerat
+- [X] Fix `inference.py` OOM error
+- [X] Fix Flower out of VRAM error
+- [X] Fix flower 'no default evaluator for client' error flower
