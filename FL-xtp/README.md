@@ -1,6 +1,6 @@
 # FL-xtp
 
-[flowertune-llm] boiler plate large language model fine tuning script with xTP-LLM framework.
+Used [flowertune-llm](https://github.com/adap/flower/tree/main/examples/flowertune-llm) boiler plate large language model fine tuning script with [xTP-LLM](https://github.com/Guoxs/xTP-LLM)framework.
 
 ## Setup
 1. Clone this project using `git clone`
